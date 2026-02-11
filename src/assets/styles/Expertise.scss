@@ -17,7 +17,7 @@
   
 .skills-container .skills-grid .skill {
     align-items: center;
-    text-align: left;
+    text-align: justify;
 }
   
 .chip {
@@ -39,10 +39,11 @@
 .flex-chips {
     line-height: 2;
     margin: 0.5;
-
+    text-align: left;
     .chip-title {
         color: white;
         padding-right: 10px;
+        text-align: left;
     }
 }
 

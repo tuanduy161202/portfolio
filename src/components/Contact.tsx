@@ -1,10 +1,10 @@
-import React, { useRef, useState } from 'react';
-import '../assets/styles/Contact.scss';
-// import emailjs from '@emailjs/browser';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import SendIcon from '@mui/icons-material/Send';
-import TextField from '@mui/material/TextField';
+// import React, { useRef, useState } from 'react';
+// import '../assets/styles/Contact.scss';
+// // import emailjs from '@emailjs/browser';
+// import Box from '@mui/material/Box';
+// import Button from '@mui/material/Button';
+// import SendIcon from '@mui/icons-material/Send';
+// import TextField from '@mui/material/TextField';
 
 // function Contact() {
 
@@ -120,6 +120,7 @@ function Contact() {
            <h1>Contact Me</h1>
           <p><b>Email:</b> tuanduythang@gmail.com</p>
           <p><b>Phone:</b> +84 769 360 057</p>
+          <p><b>Location:</b> Ho Chi Minh City, Vietnam</p>
         </div>
       </div>
     </div>

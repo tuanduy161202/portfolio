@@ -1,49 +1,24 @@
 import React from "react";
-import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBrain, faRobot, faMicrochip } from '@fortawesome/free-solid-svg-icons'; // Sử dụng icon phù hợp hơn cho AI
+import { faBrain, faMicrochip, faRobot } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
-// Nhóm 1: Tập trung vào AI Core và Research (VinBigData, GSOFT)
+// ... (Giữ nguyên phần khai báo labels/arrays của Duy) ...
 const labelsFirst = [
-    "PyTorch",
-    "TensorFlow",
-    "Scikit-learn",
-    "OpenCV",
-    "YOLO",
-    "Hugging Face",
-    "Pyannote",
-    "WavLM",
-    "CLIP",
-    "NumPy",
-    "Pandas"
+    "Python", "PyTorch", "TensorFlow", "Scikit-learn", "OpenCV",
+    "YOLO", "Hugging Face", "NumPy", "Pandas"
 ];
 
-// Nhóm 2: Tập trung vào Deployment & DevOps (Triton, Docker, ONNX)
 const labelsSecond = [
-    "Docker",
-    "Triton Inference Server",
-    "ONNX Runtime",
-    "FastAPI",
-    "Git",
-    "Linux",
-    "Railway",
-    "C++",
-    "Python"
+    "Docker", "Git", "Linux", "FastAPI",
+    "Triton Inference Server", "ONNX Runtime",
+    
 ];
 
-// Nhóm 3: Tập trung vào GenAI & Automation (Dự án Video, RAG, n8n)
 const labelsThird = [
-    "Generative Video (Wan2.1)",
-    "Infinite Talk",
-    "ComfyUI",
-    "RAG",
-    "OpenAI API",
-    "Pinecone",
-    "n8n",
-    "Playwright",
-    "Gradio"
+    "Generative Video", "ComfyUI",
+    "RAG", "OpenAI", "n8n"
 ];
 
 function Expertise() {
@@ -52,41 +27,56 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
+                
+                {/* --- Skill 1: Research --- */}
                 <div className="skill">
                     <FontAwesomeIcon icon={faBrain} size="3x"/>
                     <h3>AI Research & Development</h3>
-                    <p>Experience in developing SOTA models for Speaker Diarization [cite: 29, 33] and Medical Imaging[cite: 39, 41]. Proficient in end-to-end R&D, from data annotation with LabelStudio [cite: 34] to publishing scientific papers[cite: 44, 45].</p>
+                    <p>
+                        Proficient in the complete end-to-end AI research lifecycle, from formulating problems and curating high-quality datasets to implementing and fine-tuning State-of-the-Art (SOTA) models. 
+                        Experienced in conducting rigorous experiments and translating theoretical concepts into effective solutions.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack: </span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
+                {/* --- Skill 2: Deployment --- */}
                 <div className="skill">
                     <FontAwesomeIcon icon={faMicrochip} size="3x"/>
-                    <h3>AI Model Deployment</h3>
-                    <p>Specialized in optimizing and deploying AI models for production environments[cite: 18, 40]. Experienced with Triton Inference Server , ONNX , and building scalable backends using FastAPI [cite: 19, 24, 80] and Docker[cite: 18, 34, 80].</p>
+                    <h3>Model Deployment</h3>
+                    <p>
+                        Specialized in bridging the gap between research and production. 
+                        Skilled in optimizing deep learning architectures for low-latency inference, building scalable microservices, and managing containerized environments to ensure high availability and performance.
+                    </p>
+
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
+                {/* --- Skill 3: GenAI --- */}
                 <div className="skill">
                     <FontAwesomeIcon icon={faRobot} size="3x"/>
-                    <h3>GenAI & Automation</h3>
-                    <p>Building advanced Generative AI systems, including Text-to-Video pipelines (Wan2.1, InfiniteTalk) [cite: 13, 19] and automated RAG chatbots[cite: 52, 55]. Skilled in workflow automation using n8n and web scraping with Playwright[cite: 54].</p>
+                    <h3>Generative AI & Automation</h3>
+                    <p>
+                        Experience in architecting advanced Generative AI systems, including Multimodal generation pipelines and Retrieval-Augmented Generation (RAG) agents. 
+                        Capable of designing autonomous workflows that integrate Large Language Models (LLMs) with external tools for complex task automation.
+                    </p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tech Stack:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
+
             </div>
         </div>
     </div>

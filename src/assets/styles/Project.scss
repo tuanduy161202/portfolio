@@ -58,7 +58,16 @@
 .modal-content {
   background: #fff; padding: 20px; border-radius: 8px;
   max-width: 900px; width: 95%; position: relative; color: #333;
-
+  max-height: 90vh;
+  overflow-y: auto; 
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+  }
   .media-viewer {
     display: flex; align-items: center; justify-content: space-between;
     min-height: 400px; background: #f4f4f4; border-radius: 4px;
