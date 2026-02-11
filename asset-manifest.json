@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5bcd536b.css",
+    "main.js": "/static/js/main.6bd8a606.js",
+    "static/js/453.e7f01505.chunk.js": "/static/js/453.e7f01505.chunk.js",
+    "static/media/Adapting WavLM for Vietnamese Speaker Diarization.pdf": "/static/media/Adapting WavLM for Vietnamese Speaker Diarization.a9332f3dfd93a90e8646.pdf",
+    "static/media/bg-light.png": "/static/media/bg-light.339eaa69623af3116a2e.png",
+    "static/media/SegJSW.pdf": "/static/media/SegJSW.cd906797c57bba8669c7.pdf",
+    "static/media/bg-dark.png": "/static/media/bg-dark.2b4427cd465b33920b0e.png",
+    "static/media/avatar.jpg": "/static/media/avatar.d0c8a5ff0be89b62a211.jpg",
+    "index.html": "/index.html",
+    "main.5bcd536b.css.map": "/static/css/main.5bcd536b.css.map",
+    "main.6bd8a606.js.map": "/static/js/main.6bd8a606.js.map",
+    "453.e7f01505.chunk.js.map": "/static/js/453.e7f01505.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bcd536b.css",
+    "static/js/main.6bd8a606.js"
+  ]
+}
